@@ -42,6 +42,7 @@
 }
 .nav-labels:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 #text-image{
@@ -57,6 +58,7 @@
 }
 #headshot{
     border-radius: 10px;
+    border: 5px solid #DC206D
 }
 #main-text{
     padding: 30px;
@@ -67,6 +69,11 @@
     color: white;
     padding: 1%;
     font-size: 20px;
+}
+#project5:hover{
+    transform: scale(1);
+    cursor: default;
+    
 }
 #project-page, #work-page, #skills-page, #clubs-page{
     font-family: "Madimi One";
@@ -81,7 +88,8 @@
     border-radius: 20px;
 }
 .project:hover{
-    transform: scale(1.05);   
+    transform: scale(1.05);  
+    cursor: pointer; 
 }
 
 .project li, .work li, .skill li, .club li{
@@ -107,4 +115,5 @@ footer{
 }
 .social:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }

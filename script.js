@@ -79,26 +79,26 @@ let mainPage = document.getElementById("main-page");
 function dispAboutPage(){
   mainPage.innerHTML = `
   <div id="text-image">
-        <img width="150" id="headshot" src="headshot.jpg" />
+        <img width="150" id="headshot" src="images/headshot.jpg" />
         <p id = "main-text">
-            I am an undergraduate first-year student at Boston University's College of Engineering, and my major is Computer Engineering.
-            I am originally from northern Virginia. Some activities I enjoy outside of coding are practicing the violin, playing tennis, and making origami. My favorite color is pink (clearly).
-            Feel free to contact me at vathreya@bu.edu.
-        </p>
+        I am an undergraduate first-year student at Boston University's College of Engineering, and my major is Computer Engineering.
+        I am originally from northern Virginia. Some activities I enjoy outside of coding are practicing the violin, playing tennis, and making origami. My favorite color is pink (clearly).
+        Feel free to contact me at <a href=mailto:"vathreya@bu.edu">vathreya@bu.edu</a>.
+    </p>
   </div>
 
         <div id="icons">
-            <img width="70" height = "70" src="tennis.png" />
-            <img width="70" height = "70" src="violin.svg" />
-            <img width="70" height = "70" src="origami.png" />
-            <img width="70" height = "70" src="music note.png" />
-            <img width="70" height = "70" src="tennisball.png" />
+            <img width="70" height = "70" src="images/tennis.png" />
+            <img width="70" height = "70" src="images/violin.svg" />
+            <img width="70" height = "70" src="images/origami.png" />
+            <img width="70" height = "70" src="images/music note.png" />
+            <img width="70" height = "70" src="images/tennisball.png" />
         </div>`;
 }
 
 function dispProjectsPage(){
   mainPage.innerHTML = `<div id="project-page">
-
+  <p>Click on the projects below to navigative to the respective Github repositories.</p>
   <div id="project1" class = "project">
     <h3>Statistical Analysis of Crime Rates</h1>
         <li>Researched background information for literature review and wrote final paper</li>
@@ -130,11 +130,10 @@ function dispProjectsPage(){
       </div>
       
       <div id="project5" class = "project">
-  <h3>Analysis of Air Quality Data</h3> 
-      <li>Cleaned and randomized open-source data using file I/O operations and tables in Matlab</li>
-      <li>Applied Regression Machine Learning App in Matlab to develop ML model to predict air quality</li>
-      <li>Wrote analysis for practical application of model
-      </li>
+  <h3>Personal Portfolio Website</h3> 
+      <li>Coded static portfolio website using Javascript, CSS, and HTML </li>
+      <li>Applied images, buttons, transitions, sounds, and color schemes</li>
+      
       </div>`;
 }
 
@@ -144,16 +143,23 @@ function dispWorkPage(){
   <div id = "work1" class = "work">
       <h3>Cashier, City Convenience</h3>
           <div class = "list-work">
-              <li>stocking and closing store</li>
-              <li>greeting and interacting with customers</li>
-              <li>communicating with other employees and customers in English and Spanish as necessary </li>
+              <li>Stocking and closing store</li>
+              <li>Greeting and interacting with customers</li>
+              <li>Communicating with other employees and customers in English and Spanish as necessary </li>
+              <li>Working on average 15 hours per week</li>
               </div>
   </div>
 
-  <div id = "work1" class = "work">
-      <h3>Internship...?</h3>
+  <div id = "work2" class = "work">
+      <h3>*Incoming* Internship at Medtronic</h3>
           <div id = "list-work">
-              <li>coming soon...hopefully</li>
+              <li>Interning at Medtronic's team working with computer vision and machine learning during Summer 2024</li>
+          </div>
+  </div>
+  <div id = "work3" class = "work">
+      <h3>*Incoming* Break Through Tech AI Fellow</h3>
+          <div id = "list-work">
+              <li>Learning to use ML libraries and working on a technical project at MIT starting Summer 2024</li>
           </div>
   </div>
   
@@ -171,12 +177,23 @@ function dispSkillsPage(){
           <li>C++</li>
           <li>R</li>
           <li>Matlab</li>
+          <li>C++</li>
       </div>
 
       <div id="skills2" class = "skill">
           <h3>Language Skills</h3>
               <li>English</li>
               <li>Spanish</li>
+
+          </div>
+          <div id="skills3" class = "skill">
+          <h3>Relevant Coursework</h3>
+              <li>Introduction to Software Engineering</li>
+              <li>Linear Algebra</li>
+              <li>Multivariable Calculus</li>
+              <li>Discrete Mathematics</li>
+              <li>Engineering Mechanics</li>
+              <li>Programming for Engineers</li>
 
           </div>
 </div>`;
@@ -186,29 +203,29 @@ function dispClubsPage(){
   mainPage.innerHTML = `<div id="clubs-page">
   <div id="club1" class="club">
       <h3>Upsilon Pi Epsilon</h3>
-          <li>Current Provisional Member...soon to be regular member...maybe?</li>
+          <li>Current Member</li>
           <li>Boston University's Computer and Information Discipline Honor Society</li>
   </div>
 
   <div id="club2" class="club">
       <h3>Hack4Impact</h3>
           <li>Junior Development Team</li>
-          <li>attending seminars to learn Javascript/HTML/CSS</li>
+          <li>Attending seminars to learn Javascript/HTML/CSS</li>
 
   </div>
 
   <div id="club3" class="club">
       <h3>Boston University Quant Alpha</h3>
           <li>Junior Analyst Team member</li>
-          <li>attending seminars about basic financial modeling topics</li>
+          <li>Attending seminars about basic financial modeling topics</li>
   </div>
 
   <div id = "club4" class="club">
       <h3>Girls Who Math</h3>
-          <li>Had the role of teacher throughout high school</li>
+          <li>Led the role of teacher throughout high school</li>
           <li>Became Executive Director in 12th grade</li>
           <li>Wrote weekly lessons on Algebra 1, Algebra 2, Precalculus, Trigonometry, and Geometry</li>
-          <li>Taught groups of 3-5 younger students during free online classes</li>
+          <li>Taught groups of three to five younger students during free online classes</li>
           <li>Handled all communications with students and parents, managed website and social media, and advised other teachers as Executive Director</li>
       </div>
 
@@ -239,14 +256,26 @@ function click(){
 const instaButton = document.getElementById("insta-pic");
 instaButton.addEventListener("click", function(){
   window.open("https://www.instagram.com/varsha.athreya487/");
+  
 })
 
 const linkButton = document.getElementById("link-pic");
 linkButton.addEventListener("click", function(){
   window.open("https://www.linkedin.com/in/varsha-athreya");
+ 
 })
 
 const fbButton = document.getElementById("fb-pic");
 fbButton.addEventListener("click", function(){
   window.open("https://www.facebook.com/varsha.blank/");
+  
+})
+instaButton.addEventListener("mouseover", function(){
+  click();
+})
+linkButton.addEventListener("mouseover", function(){
+  click();
+})
+fbButton.addEventListener("mouseover", function(){
+  click();
 })
