@@ -11,6 +11,7 @@
     font-family: "Madimi One";
     color: white;
     display: flex;
+    
 }
 #about-me{
     background: #DC206D;
@@ -25,6 +26,7 @@
 }
 #name{
     background:#EE7CAA;
+    
 }
 .flower{
     background:#EE7CAA;
@@ -38,7 +40,7 @@
     border-radius: 30px;
     border: none;
     font-family: "Madimi One";
-    font-size: 15px;
+    font-size: 20px;
 }
 .nav-labels:hover{
     transform: scale(1.2);

@@ -98,7 +98,7 @@ function dispAboutPage(){
 
 function dispProjectsPage(){
   mainPage.innerHTML = `<div id="project-page">
-  <p>Click on the projects below to navigative to the respective Github repositories.</p>
+  <p>Click on the projects below to navigative to the respective Github repositories or papers.</p>
   <div id="project1" class = "project">
     <h3>Statistical Analysis of Crime Rates</h1>
         <li>Researched background information for literature review and wrote final paper</li>
@@ -230,7 +230,7 @@ function dispClubsPage(){
       </div>
 
   <div id="club5" class="club">
-      <h3>Writing Center</h3>
+      <h3>High School Writing Center</h3>
           <li>Edited and drafted research papers, literary analyses, and essays of other high school students weekly
           </li>
   </div>
