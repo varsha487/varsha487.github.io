@@ -177,7 +177,7 @@ function dispSkillsPage(){
           <li>C++</li>
           <li>R</li>
           <li>Matlab</li>
-          <li>C++</li>
+          <li>Git</li>
       </div>
 
       <div id="skills2" class = "skill">
