@@ -140,6 +140,24 @@ function dispProjectsPage(){
 function dispWorkPage(){
   mainPage.innerHTML = `<div id="work-page">
 
+  
+  <div id = "work2" class = "work">
+      <h3>WISE Engineering Internship at Medtronic</h3>
+          <div id = "list-work">
+              <li>Improved front end GUI of computer application to log system data from surgical robot using Unity and C#</li>
+              <li>Streamlined data analysis of the application’s output data using Python with libraries such as os and csv</li>
+              <li>Increased capability to log additional system data from surgical robot in the back end using Unity and C#</li>
+              <li>Compiled performance indicators and previous testing about the application for an engineering test report</li>
+              
+          </div>
+  </div>
+  <div id = "work3" class = "work">
+      <h3>*In Progress* Break Through Tech AI at MIT Fellow</h3>
+          <div id = "list-work">
+              <li>Completed ML Foundations course through eCornell, learning and applying concepts including feature engineering, model selection, ensemble methods, unsupervised learning, NLP, and CV in Python</li>
+          </div>
+  </div>
+
   <div id = "work1" class = "work">
       <h3>Cashier, City Convenience</h3>
           <div class = "list-work">
@@ -150,17 +168,11 @@ function dispWorkPage(){
               </div>
   </div>
 
-  <div id = "work2" class = "work">
-      <h3>*Incoming* Internship at Medtronic</h3>
-          <div id = "list-work">
-              <li>Interning at Medtronic's team working with computer vision and machine learning during Summer 2024</li>
-          </div>
-  </div>
-  <div id = "work3" class = "work">
-      <h3>*Incoming* Break Through Tech AI Fellow</h3>
-          <div id = "list-work">
-              <li>Learning to use ML libraries and working on a technical project at MIT starting Summer 2024</li>
-          </div>
+  <div id = "work4" class = "work">
+      <h3>*Incoming* Tutor, Boston University Engineering Fall 2024</h3>
+          <div class = "list-work">
+              <li>Will be tutoring at the engineering college's tutoring center during the fall semester</li>
+              </div>
   </div>
   
 </div>
@@ -178,6 +190,8 @@ function dispSkillsPage(){
           <li>R</li>
           <li>Matlab</li>
           <li>Git</li>
+          <li>C#</li>
+          <li>Unity</li>
       </div>
 
       <div id="skills2" class = "skill">
@@ -212,12 +226,6 @@ function dispClubsPage(){
           <li>Junior Development Team</li>
           <li>Attending seminars to learn Javascript/HTML/CSS</li>
 
-  </div>
-
-  <div id="club3" class="club">
-      <h3>Boston University Quant Alpha</h3>
-          <li>Junior Analyst Team member</li>
-          <li>Attending seminars about basic financial modeling topics</li>
   </div>
 
   <div id = "club4" class="club">
