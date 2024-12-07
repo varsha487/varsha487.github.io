@@ -54,7 +54,22 @@ projectButton.addEventListener("click", function() {
       project4.addEventListener("click", function(){
         window.open("https://github.com/varsha487/fast-fashion.git")
       })
+      const project0 = document.getElementById("project0");
+      project0.addEventListener("click", function(){
+        window.open("https://github.com/varsha487/AquaAvengers.git")
+      })
 
+      const project5 = document.getElementById("project5");
+      project5.addEventListener("click", function(){
+        window.open("https://github.com/varsha487/8blab.git")
+      })
+
+      
+
+      const project6 = document.getElementById("project6");
+      project6.addEventListener("click", function(){
+        window.open("https://github.com/TyagiArav/GymGuru.git")
+      })
     });
 
 
@@ -79,7 +94,7 @@ let mainPage = document.getElementById("main-page");
 function dispAboutPage(){
   mainPage.innerHTML = `
   <div id="text-image">
-        <img width="150" id="headshot" src="images/headshot.jpg" />
+        <img width="300" id="headshot" src="images/headshot.jpg" />
         <p id = "main-text">
         I am an undergraduate first-year student at Boston University's College of Engineering, and my major is Computer Engineering.
         I am originally from northern Virginia. Some activities I enjoy outside of coding are practicing the violin, playing tennis, and making origami. My favorite color is pink (clearly).
@@ -99,6 +114,31 @@ function dispAboutPage(){
 function dispProjectsPage(){
   mainPage.innerHTML = `<div id="project-page">
   <p>Click on the projects below to navigative to the respective Github repositories or papers.</p>
+
+   <div id="project0" class = "project">
+    <h3>Climate Dashboard for Building Sustainable Water Infrastructure</h1>
+        <li>MIT Policy Hackathon Finalist</li>
+        <li>Analyzed multidimensional GIS data using Python and visualizations using GeoDataFrame package</li>
+        <li>Built web application to display climate data effectively for policymakers’ use using Flask framework</li>
+        <li>Presented to over 100 people including contestants and judges and defended project in Q&A section</li>  
+        </div>
+
+<div id="project5" class = "project">
+  <h3>Predicting Perceptions of Corruption Using Machine Learning</h3>
+      <li>Trained and validated ML model to predict perceptions of corruption from 1500+ data points with resultant R-squared of 85% using Python packages such as sklearn and scipy.stats </li>
+<li>Iterated over linear regression and decision tree models to determine best model, hyperparameters and features</li>
+<li>Cleaned open source data by using one-hot encoding, replacing null values and winsorizing outliers </li>
+      </div>
+
+      <div id="project6" class = "project">
+  <h3>Personalized AI Fitness Trainer</h3>
+      <li>Implemented OpenAI’s API to allow users to create a personalized fitness plan through a web application 
+</li>
+
+<li>Programmed application using the Flask framework in Python, Javascript, HTML, and CSS</li>
+      </div>
+
+
   <div id="project1" class = "project">
     <h3>Statistical Analysis of Crime Rates</h1>
         <li>Researched background information for literature review and wrote final paper</li>
@@ -129,20 +169,25 @@ function dispProjectsPage(){
           using Python; displayed map image using API</li>
       </div>
       
-      <div id="project5" class = "project">
-  <h3>Personal Portfolio Website</h3> 
-      <li>Coded static portfolio website using Javascript, CSS, and HTML </li>
-      <li>Applied images, buttons, transitions, sounds, and color schemes</li>
-      
-      </div>`;
+      `;
 }
 
 function dispWorkPage(){
   mainPage.innerHTML = `<div id="work-page">
 
+    <div id = "work3" class = "work">
+      <h3>AI Studio Fellow, Cashew Capital: August 2024 - present</h3>
+          <div id = "list-work">
+              <li>Break Through Tech AI at MIT Fellow</li>
+              <li>Built ML algorithm to predict future prices and market trends from historical financial data and provide alerts of market movement and pattern recognition for fund managers in Python</li>
+              <li>Utilized LLMs to read through large amounts of financial news and storing it in MongoDB database</li>
+              <li>Implemented FinBERT and web scraping methods for natural language processing of financial articles daily</li>
+
+          </div>
+  </div>
   
   <div id = "work2" class = "work">
-      <h3>WISE Engineering Internship at Medtronic</h3>
+      <h3>WISE Engineering Internship, Medtronic: June 2024 - July 2024</h3>
           <div id = "list-work">
               <li>Improved front end GUI of computer application to log system data from surgical robot using Unity and C#</li>
               <li>Streamlined data analysis of the application’s output data using Python with libraries such as os and csv</li>
@@ -151,27 +196,30 @@ function dispWorkPage(){
               
           </div>
   </div>
-  <div id = "work3" class = "work">
-      <h3>*In Progress* Break Through Tech AI at MIT Fellow</h3>
-          <div id = "list-work">
-              <li>Completed ML Foundations course through eCornell, learning and applying concepts including feature engineering, model selection, ensemble methods, unsupervised learning, NLP, and CV in Python</li>
-          </div>
-  </div>
 
-  <div id = "work1" class = "work">
-      <h3>Cashier, City Convenience</h3>
+ <div id = "work5" class = "work">
+      <h3>Grader for Engineering Mechanics, Boston University Engineering: September 2024 - present </h3>
           <div class = "list-work">
-              <li>Stocking and closing store</li>
-              <li>Greeting and interacting with customers</li>
-              <li>Communicating with other employees and customers in English and Spanish as necessary </li>
-              <li>Working on average 15 hours per week</li>
+              <li>Scoring quizzes and homework assignments weekly for 70+ students for Engineering Mechanics (ENG EK 301)</li>
               </div>
   </div>
 
+
   <div id = "work4" class = "work">
-      <h3>*Incoming* Tutor, Boston University Engineering Fall 2024</h3>
+      <h3>Engineering Tutor, Boston University Engineering: September 2024 - present</h3>
           <div class = "list-work">
-              <li>Will be tutoring at the engineering college's tutoring center during the fall semester</li>
+              <li>Tutoring ~10 peers per week in subjects including Statics, Software Engineering, Calculus, Circuits and Chemistry</li>
+              <li>Explaining concepts effectively from different perspectives to increase understanding </li>
+
+              </div>
+  </div>
+    <div id = "work1" class = "work">
+      <h3>Cashier, City Convenience: September 2023 - May 2024</h3>
+          <div class = "list-work">
+              <li>Stocked and closed store</li>
+              <li>Greeted and interacted with customers</li>
+              <li>Communicated with other employees and customers in English and Spanish as necessary </li>
+    
               </div>
   </div>
   
@@ -202,46 +250,38 @@ function dispSkillsPage(){
           </div>
           <div id="skills3" class = "skill">
           <h3>Relevant Coursework</h3>
+              <li>Applied Algorithms</li>
+              <li>Logic Design</li>
+              <li>Electric Circuits</li>
               <li>Introduction to Software Engineering</li>
-              <li>Linear Algebra</li>
-              <li>Multivariable Calculus</li>
               <li>Discrete Mathematics</li>
               <li>Engineering Mechanics</li>
               <li>Programming for Engineers</li>
-
+              
           </div>
 </div>`;
 }
 
 function dispClubsPage(){
   mainPage.innerHTML = `<div id="clubs-page">
+  
+  <div id="club0" class="club">
+      <h3>Artificial Intelligence Society</h3>
+          <li>Secretary</li>
+          <li>Managing admin duties and planning and marketing events</li>
+  </div>
+
   <div id="club1" class="club">
       <h3>Upsilon Pi Epsilon</h3>
           <li>Current Member</li>
           <li>Boston University's Computer and Information Discipline Honor Society</li>
+          
   </div>
 
   <div id="club2" class="club">
       <h3>Hack4Impact</h3>
           <li>Junior Development Team</li>
-          <li>Attending seminars to learn Javascript/HTML/CSS</li>
-
-  </div>
-
-  <div id = "club4" class="club">
-      <h3>Girls Who Math</h3>
-          <li>Led the role of teacher throughout high school</li>
-          <li>Became Executive Director in 12th grade</li>
-          <li>Wrote weekly lessons on Algebra 1, Algebra 2, Precalculus, Trigonometry, and Geometry</li>
-          <li>Taught groups of three to five younger students during free online classes</li>
-          <li>Handled all communications with students and parents, managed website and social media, and advised other teachers as Executive Director</li>
-      </div>
-
-  <div id="club5" class="club">
-      <h3>High School Writing Center</h3>
-          <li>Edited and drafted research papers, literary analyses, and essays of other high school students weekly
-          </li>
-  </div>
+          <li>Attended seminars to learn Javascript/HTML/CSS/React</li>
 
 </div>`;
 

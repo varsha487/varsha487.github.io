@@ -72,11 +72,7 @@
     padding: 1%;
     font-size: 20px;
 }
-#project5:hover{
-    transform: scale(1);
-    cursor: default;
-    
-}
+
 #project-page, #work-page, #skills-page, #clubs-page{
     font-family: "Madimi One";
     padding: 2%;
