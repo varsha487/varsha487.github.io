@@ -96,7 +96,7 @@ function dispAboutPage(){
   <div id="text-image">
         <img width="300" id="headshot" src="images/headshot.jpg" />
         <p id = "main-text">
-        I am an undergraduate first-year student at Boston University's College of Engineering, and my major is Computer Engineering.
+        I am a junior undergraduate student at Boston University's College of Engineering, and my major is Computer Engineering.
         I am originally from northern Virginia. Some activities I enjoy outside of coding are practicing the violin, playing tennis, and making origami. My favorite color is pink (clearly).
         Feel free to contact me at <a href=mailto:"vathreya@bu.edu">vathreya@bu.edu</a>.
     </p>
