@@ -64,11 +64,14 @@ projectButton.addEventListener("click", function() {
         window.open("https://github.com/varsha487/8blab.git")
       })
 
-      
-
       const project6 = document.getElementById("project6");
       project6.addEventListener("click", function(){
         window.open("https://github.com/TyagiArav/GymGuru.git")
+      })
+
+      const project7 = document.getElementById("project7");
+      project7.addEventListener("click", function(){
+        window.open("https://github.com/cc459/Predictive-Analysis.git")
       })
     });
 
@@ -114,6 +117,13 @@ function dispAboutPage(){
 function dispProjectsPage(){
   mainPage.innerHTML = `<div id="project-page">
   <p>Click on the projects below to navigative to the respective Github repositories or papers.</p>
+
+  <div id="project7" class = "project">
+    <h3>Predictive Stock Analysis through Break Through Tech</h1>
+        <li>Built ML algorithm to predict future prices and market trends from historical financial data and provide alerts of market movement and pattern recognition for fund managers in Python</li>
+              <li>Utilized LLMs to read through large amounts of financial news and storing it in MongoDB database</li>
+              <li>Implemented FinBERT and web scraping methods for natural language processing of financial articles daily</li>
+</div>
 
    <div id="project0" class = "project">
     <h3>Climate Dashboard for Building Sustainable Water Infrastructure</h1>
