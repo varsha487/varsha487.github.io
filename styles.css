@@ -13,6 +13,9 @@
     display: flex;
     
 }
+li{
+    text-indent: -22px;
+}
 #about-me{
     background: #DC206D;
 }
