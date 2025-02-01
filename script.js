@@ -131,6 +131,11 @@ instaButton.addEventListener("click", function(){
   window.open("https://www.instagram.com/varsha.athreya487/");
   
 })
+const gitButton = document.getElementById("github-pic");
+gitButton.addEventListener("click", function(){
+  window.open("https://github.com/varsha487");
+  
+})
 
 const linkButton = document.getElementById("link-pic");
 linkButton.addEventListener("click", function(){
