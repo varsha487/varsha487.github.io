@@ -85,11 +85,14 @@ projectButton.addEventListener("click", async function() {
     window.open("https://github.com/cc459/Predictive-Analysis.git")
     })
 
-    
-
     const project8 = document.getElementById("project8");
     project8.addEventListener("click", function(){
     window.open("https://github.com/melissaregal/ec311project_gr7")
+    })
+
+    const project9 = document.getElementById("project9");
+    project9.addEventListener("click", function(){
+    window.open("https://github.com/BTTAI-Kaggle-AJL-Team13/Equitable-AI-for-Dermatology")
     })
     });
 
