@@ -94,6 +94,21 @@ projectButton.addEventListener("click", async function() {
     project9.addEventListener("click", function(){
     window.open("https://github.com/BTTAI-Kaggle-AJL-Team13/Equitable-AI-for-Dermatology")
     })
+
+    const project10 = document.getElementById("project10");
+    project10.addEventListener("click", function(){
+    window.open("https://metaphor-psi.vercel.app/")
+    })
+
+    const project11 = document.getElementById("project11");
+    project11.addEventListener("click", function(){
+    window.open("https://github.com/varsha487/Deep-Learning-Project.git")
+    })
+    const project12 = document.getElementById("project12");
+    project12.addEventListener("click", function(){
+    window.open("https://github.com/avanc13/Medical-Imaging-AI-Project-.git")
+    })
+
     });
 
 
