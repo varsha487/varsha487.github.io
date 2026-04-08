@@ -108,6 +108,10 @@ projectButton.addEventListener("click", async function() {
     project12.addEventListener("click", function(){
     window.open("https://github.com/avanc13/Medical-Imaging-AI-Project-.git")
     })
+    const project13 = document.getElementById("project13");
+    project13.addEventListener("click", function(){
+    window.open("https://ed-200-website.vercel.app/")
+    })
 
     });
 
