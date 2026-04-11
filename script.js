@@ -189,15 +189,23 @@ function setupAccordion() {
       const content = header.nextElementSibling;
       const isOpen = content.style.display === "block";
 
-      // close all sections
       document.querySelectorAll(".section-content").forEach(c => {
         c.style.display = "none";
       });
 
-      // only open if it was previously closed
       if (!isOpen) {
         content.style.display = "block";
       }
+    });
+  });
+
+
+  const closeButtons = document.querySelectorAll(".close-btn");
+
+  closeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.parentElement;
+      content.style.display = "none";
     });
   });
 }

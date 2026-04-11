@@ -130,14 +130,14 @@ footer{
   margin: 0;
   padding: 15px;
   cursor: pointer;
-  background-color: #fee1e8;
+  background-color: #f4c6d4;
   font-size: 20px;
   border-radius: 20px;
   
 }
 
 .section-header:hover {
-  background-color: #fdb8c7;
+  background-color: #efa3b8;
 }
 
 .section-content {
@@ -152,4 +152,22 @@ footer{
 
 ul {
   margin-top: 5px;
+}
+
+#instructions{
+    padding-bottom: 2%;
+}
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #DC206D;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Madimi One";
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #b91c5d;
 }
