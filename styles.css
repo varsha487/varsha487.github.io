@@ -2,7 +2,14 @@
 *{
     padding: 0;
     margin: 0;
-    background: #E4B8CA;
+}
+html, body{
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+     background: #E4B8CA;
 }
 #mynameinfo{
     align-items: center;
@@ -67,6 +74,9 @@ li{
 }
 #main-text{
     padding: 30px;
+}
+#main-page {
+  flex: 1;  
 }
 #credit{
     background-color: #EE7CAA;
