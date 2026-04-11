@@ -11,15 +11,26 @@ body {
     flex-direction: column;
      background: #E4B8CA;
 }
-#mynameinfo{
+#mynameinfo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+   padding: 10px 30px;
     background-color: #EE7CAA;
     font-family: "Madimi One";
     color: white;
-    display: flex;
-    
 }
+
+.desktop-flowers {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin-left: 4%;
+    margin-right: 4%
+
+}
+
 li{
     text-indent: -22px;
 }
@@ -40,6 +51,7 @@ li{
 }
 .flower{
     background:#EE7CAA;
+    width: 60px;
  
 }
 .nav-labels{
@@ -99,6 +111,7 @@ li{
     border-radius: 20px;
     background-color: #f5ced9;
 }
+
 .project:hover{
     transform: scale(1.05);  
     cursor: pointer; 
@@ -157,6 +170,7 @@ footer{
 
 }
 
+
 .work {
   margin-bottom: 15px;
 }
@@ -182,3 +196,93 @@ ul {
 .close-btn:hover {
   background-color: #b91c5d;
 }
+#menu-toggle {
+  display: none;
+}
+.mobile-flower {
+  display: none;
+}
+@media (max-width: 768px) {
+  #text-image {
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+  }
+
+    #mynameinfo {
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+        display: flex;
+    align-items: center;
+    width: 100%;
+  }
+   
+  .nav-labels:hover {
+    transform: none;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+.project:hover {
+    transform: none;
+  }
+   
+    
+li {
+    text-indent: 0;
+    margin-left: 7%;
+}
+
+  /* SHOW hamburger */
+  #menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+   
+  }
+  .desktop-flowers {
+    display: none;
+  }
+  .mobile-flower {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+    .left-flower {
+    margin-left: 10px;
+  }
+
+  .right-flower {
+    margin-right: 10px;
+  }
+  .nav-labels {
+    display: none;
+    width: 80%;
+    text-align: left;
+    padding: 15px;
+    margin:2%;
+  }
+
+
+  .nav-active .nav-labels {
+    display: block;
+  }
+
+  #navbar .flower {
+    display: none;
+  }
+  footer {
+    width: 100%;
+     display: flex;
+  }
+}
+
