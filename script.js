@@ -10,6 +10,7 @@ async function loadPage(url)
   let response = await fetch(url);
   let html = await response.text();
   mainPage.innerHTML = html;
+  setupAccordion();
 }
 
 window.addEventListener("load", function(){
@@ -179,3 +180,25 @@ linkButton.addEventListener("mouseover", function(){
 fbButton.addEventListener("mouseover", function(){
   click();
 })
+
+function setupAccordion() {
+  const headers = document.querySelectorAll(".section-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      const isOpen = content.style.display === "block";
+
+      // close all sections
+      document.querySelectorAll(".section-content").forEach(c => {
+        c.style.display = "none";
+      });
+
+      // only open if it was previously closed
+      if (!isOpen) {
+        content.style.display = "block";
+      }
+    });
+  });
+}
+
